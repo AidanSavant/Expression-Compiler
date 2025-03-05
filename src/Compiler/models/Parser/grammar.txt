@@ -1,0 +1,14 @@
+<program> ::= <arith_expr> | <bool_expr>
+
+<arith_expr>  ::= <sum_diff>
+<sum_diff>    ::= <prod_quot> ("+" | "-") <sum_diff> | <prod_quot>
+<prod_quot>   ::= <arith_paren> ("*" | "/") <prod_quot> | <arith_paren>
+<arith_paren> ::= "(" <arith_expr> ")" | <int>
+
+<bool_expr>  ::= <bool_or>
+<bool_or>    ::= <bool_and> "|" <bool_or>  | <bool_and>
+<bool_and>   ::= <bool_not> "&" <bool_and> | <bool_not>
+<bool_not>   ::= "~" <bool_paren> | <bool_paren>
+<bool_paren> ::= "(" <bool_expr> ")" | <int>
+
+<int>  ::= [0-9]+

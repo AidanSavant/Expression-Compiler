@@ -1,3 +1,5 @@
+# needs to be updated, code does not reflect this grammar anymore
+
 <program> ::= <arith_expr> | <bool_expr>
 
 <arith_expr>  ::= <sum_diff>

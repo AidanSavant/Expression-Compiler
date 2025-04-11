@@ -1,2 +1,2 @@
-# Polynomial-Compiler
-Basic polynomial compiler using recursive descent parsing in Java.
+# Expressiom-Compiler
+Basic expression (arithmetic & boolean expression) compiler to x86-64 using recursive descent parsing in Java.
